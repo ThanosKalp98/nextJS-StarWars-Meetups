@@ -5,7 +5,7 @@ function MainNavigation() {
 
   return (
     <header className={classes.header}>
-      <div className={classes.logo}>Planet Meetups</div>
+      <div className={classes.logo}>StarWars Meetups</div>
       <nav>
         <ul>
           <li>
