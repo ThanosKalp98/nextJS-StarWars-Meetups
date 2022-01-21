@@ -53,9 +53,11 @@ function NewMeetupForm(props) {
           ></textarea>
         </div>
         <div className={classes.actions}>
-        <Link href='/'><button>Add Meetup</button></Link>
-          
-        </div>
+             <Link href='/'>
+        <button>Add Meetup</button>
+        </Link>
+          </div>
+       
       </form>
     </Card>
   );
