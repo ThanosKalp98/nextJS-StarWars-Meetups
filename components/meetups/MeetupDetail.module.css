@@ -1,7 +1,11 @@
 .detail {
     text-align: center;
+    padding: 15px 15px 15px 15px ;
+    background-color: white;
+    border-radius: 5px;
 }
 
 .detail img {
     width: 100%;
+    border-radius: 5px;
 }
