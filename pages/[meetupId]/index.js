@@ -23,11 +23,11 @@ function MeetupDetails (props) {
 }
 
 export async function getStaticPaths() {
-    const client = await MongoClient.connect('mongodb+srv://ThanosKalp:ODBqyDBG8Y0JlRWe@nextjscc.phmzm.mongodb.net/myFirstDatabase?tryWrites=true&w=majority');
+    const client = await MongoClient.connect('mongodb+srv://ThanosKalp:ODBqyDBG8Y0JlRWe@nextjscc.phmzm.mongodb.net/myFirstDatabase?retryWrites=true&w=majority');
         
     const db = client.db();
 
-    const meetupsCollection = db.collection('meetups');    
+    const meetupsCollection = db.collection('meetups'); 
 
     // .find() gives me access to all the meetups ||  {_id: 1} means that I am specifically referring to the id only
     const meetups = await meetupsCollection.find({}, {_id: 1}).toArray();
