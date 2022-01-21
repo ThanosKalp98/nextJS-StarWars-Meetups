@@ -21,7 +21,7 @@ async function handler(req, res) {
 
         console.log(result);
         
-        //! Add error handling here!
+        //! Error handling could be aaded here.
 
         client.close();
 

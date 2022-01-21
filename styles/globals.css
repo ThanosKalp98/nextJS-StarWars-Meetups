@@ -7,7 +7,7 @@
 body {
   font-family: 'Open Sans', 'Lato', sans-serif;
   margin: 0;
-  background: url(../images/star-wars-backgrounds-25.jpg);
+  background-image: url('https://starwarsblog.starwars.com/wp-content/uploads/2020/04/star-wars-backgrounds-25.jpg');
 }
 
 h1,

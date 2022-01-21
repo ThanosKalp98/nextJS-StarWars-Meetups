@@ -35,9 +35,8 @@ export async function getStaticProps() {
 
     client.close();
     
-    // Always need to return an object
+    //* Always need to return an object
     return {
-        // These DUMMY_MEETUPS are being setted as props for my -> HomePage(props)
         props: {
             meetups: meetups.map(meetup => ({
                 title: meetup.title,

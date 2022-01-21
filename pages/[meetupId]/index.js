@@ -53,7 +53,6 @@ export async function getStaticProps(context) {
 
     const meetupsCollection = db.collection('meetups');    
 
-    // .find() gives me access to all the meetups ||  {_id: 1} means that I am specifically referring to the id only
     const selectedMeetup = await meetupsCollection.findOne({
         _id: ObjectId(meetupId),
     });
